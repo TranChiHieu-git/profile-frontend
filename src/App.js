@@ -8,6 +8,7 @@ import 'bootstrap/dist/js/bootstrap.min';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 import 'bootstrap/dist/css/bootstrap-reboot.css';
+import 'font-awesome/css/font-awesome.min.css';
 import Home from "./component/homepage/home";
 function App() {
     return (

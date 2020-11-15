@@ -5,13 +5,10 @@ class Header extends Component {
         return (
             <div className="container navbar-homepage">
                 <nav className="navbar navbar-expand-lg navbar-light">
-                    <a className="navbar-toggler" href="#">Navbar</a>
-                    <button className="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarNavDropdown"
-                            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"/>
+                    <button className="navbar-toggler border-0">
+                        <i className="fa fa-bars text-icon-toggle"/>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarNavDropdown">
+                    <div className="collapse navbar-collapse">
                         <ul className="navbar-nav container-flex">
                             <li className="nav-item">
                                 <a className="nav-link navbar-home-text uslide" href="#">Thông Tin</a>
@@ -31,9 +28,6 @@ class Header extends Component {
                         </ul>
                     </div>
                 </nav>
-                {/*<div className="typewriter">*/}
-                {/*    <div className="typewriter-text">Twinkle, twinkle, little star.</div>*/}
-                {/*</div>*/}
             </div>
 
         );

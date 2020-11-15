@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+* {
+    font-size: 1rem;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-home-text {
+    font-weight: bolder !important;
+    color: white !important;
+    font-size: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container-flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 0 20% 0 20%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.background-img-home {
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar-homepage {
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    animation: slide-in 2s ease-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text-type {
+    position: absolute;
+    top: 40vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    color: white;
+    font-weight: bold;
+    font-size: 60px
 }
+
+.about-me-button {
+    position: absolute;
+    top: 80vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    color: #FFFFFF !important;
+    font-size: 20px;
+    border: #FFFFFF 2px solid;
+    padding: 10px;
+    text-decoration: none !important;
+    cursor: pointer;
+}
+
+.about-me-button:hover {
+    background-color: #0d6ee5;
+    border: #0d6ee5 2px solid;
+}
+
+@keyframes slide-in {
+    0% {
+        top: -50px;
+    }
+    40% {
+        top: 20px;
+    }
+    70% {
+        top: 10px;
+    }
+    100% {
+        top: 15px;
+    }
+}
+
+/* hiệu ứng gạch dưới */
+.uslide {
+    display: inline-block;
+    text-decoration: none !important;
+    color: white;
+}
+
+.uslide:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+.uslide:hover:after {
+    width: 100%;
+    background: linear-gradient(to left, chartreuse, #ffa91b, gray);;
+    color: #0d6ee5 !important;
+}
+
+/* END */

@@ -9,15 +9,35 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 import 'bootstrap/dist/css/bootstrap-reboot.css';
 import 'font-awesome/css/font-awesome.min.css';
-import Home from "./component/homepage/home";
+import {Switch, Route} from "react-router-dom";
+import Home from "./page/index/home"
+import AboutMe from "./page/index/aboutme"
+import Resume from "./page/index/resume"
+import Portfolio from "./page/index/portfolio"
+import Education from "./page/index/education"
+import Contact from "./page/index/contact"
+import Leftmenu from "./component/core/leftmenu/leftmenu";
+
 function App() {
     return (
-        <div>
-            <div className="header">
-                <Home/>
+        <React.Fragment>
+            <div className="scrollbar">
+                <div className="left-menu">
+                    <Leftmenu/>
+                </div>
+            </div>
+            <div className="right-content">
+                <Switch>
+                    <Route exact path='/' component={Home}/>
+                    <Route exact path='/aboutme' component={AboutMe}/>
+                    <Route exact path='/resume' component={Resume}/>
+                    <Route exact path='/portfolio' component={Portfolio}/>
+                    <Route exact path='/education' component={Education}/>
+                    <Route exact path='/contact' component={Contact}/>
+                </Switch>
             </div>
 
-        </div>
+        </React.Fragment>
     );
 }
 

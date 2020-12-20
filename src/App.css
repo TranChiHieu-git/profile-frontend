@@ -1,136 +1,111 @@
 * {
-    font-size: 1rem;
-    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+    font-family: 'Montserrat', sans-serif;
+    font-size: medium;
+    margin: 0;
+    padding: 0;
 }
 
-.navbar-home-text {
-    font-weight: bolder !important;
-    color: white !important;
-    font-size: 20px;
-}
-
-.container-flex {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    margin: 0 20% 0 20%;
-}
-
-.background-img-home {
+.left-menu {
+    position: absolute;
+    left: 0;
     height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 20vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgb(247, 249, 252);
 }
 
-.navbar-homepage {
-    position: absolute;
-    top: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: inline-block;
-    animation: slide-in 2s ease-out;
+.left-menu::-webkit-scrollbar-track {
+    background-color: #F5F5F5;
 }
 
-.text-type {
+.left-menu::-webkit-scrollbar {
+    width: 5px;
+}
+
+.left-menu::-webkit-scrollbar-thumb {
+    background-color: rgb(166, 226, 234);
+}
+
+
+.right-content {
     position: absolute;
-    top: 40vh;
-    left: 50%;
-    transform: translateX(-50%);
-    display: inline-block;
-    color: white;
+    left: 20vw;
+}
+
+/*  */
+.title-menu {
+    text-align: center;
+    padding: 20% 0 1% 0;
+    font-weight: bolder;
+    font-size: 1.4em;
+}
+
+.title-status {
+    height: 24px;
+    text-align: center;
+}
+
+.text-status {
     font-weight: bold;
-    font-size: 60px
+    color: #8e8b8b;
 }
 
-.about-me-button {
+/*  */
+/* menu left background */
+.menu-left-bottombackgroung {
     position: absolute;
-    top: 80vh;
-    left: 50%;
-    transform: translateX(-50%);
-    display: inline-block;
-    color: #FFFFFF !important;
-    font-size: 20px;
-    border: #FFFFFF 2px solid;
-    padding: 10px;
-    text-decoration: none !important;
+    top: 20vh;
+    bottom: 0;
+    width: 20vw;
+    height: auto;
+}
+
+/* end menu left background */
+/* avatar */
+.background {
+    width: 20vw;
+    height: 20vh;
+}
+
+.menu-avatar {
+    text-align: center;
+    margin: 15%;
+    position: absolute;
+    top: 6vh;
+    left: 3.45vw;
+    z-index: 1;
+}
+
+.avatar {
+    border-radius: 100%;
+    width: 7vw;
+    height: auto;
+}
+
+/* end avatar */
+
+/* icon menu */
+.menu-icon {
     cursor: pointer;
+    font-weight: bold;
+    padding: 4% 0 4% 7%;
+    margin: 2% 0 2% 16%;
+    color: #6a6868;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    transition: 0.5s;
 }
 
-.about-me-button:hover {
-    background-color: #0d6ee5;
-    border: #0d6ee5 2px solid;
+.menu-icon:hover {
+    background-color: rgb(212, 243, 247);
 }
 
-@keyframes slide-in {
-    0% {
-        top: -50px;
-    }
-    40% {
-        top: 20px;
-    }
-    70% {
-        top: 10px;
-    }
-    100% {
-        top: 15px;
-    }
-}
-
-/* hiệu ứng gạch dưới */
-.uslide {
-    display: inline-block;
-    text-decoration: none !important;
+.icon-circle {
+    border: 8px solid rgb(17, 214, 240);
+    border-radius: 100%;
     color: white;
+    background-color: rgb(17, 214, 240);
 }
 
-.uslide:after {
-    content: '';
-    display: block;
-    height: 3px;
-    width: 0;
-    background: transparent;
-    transition: width .5s ease, background-color .5s ease;
-}
-
-.uslide:hover:after {
-    width: 100%;
-    background: linear-gradient(to left, chartreuse, #ffa91b, gray);;
-    color: #0d6ee5 !important;
-}
-
-/* END */
-.text-icon-toggle {
-    color: white;
-    border: white 0.5px solid;
-    border-radius: 5px;
-    padding: 5px 12px 5px 12px;
-}
-
-@media only screen and (max-width: 600px) {
-    .text-type {
-        position: absolute;
-        top: 30vh;
-        left: 50%;
-        transform: translateX(-50%);
-        display: inline-block;
-        color: white;
-        font-weight: bold;
-        font-size: 40px
-    }
-
-    .about-me-button {
-        position: absolute;
-        top: 80vh;
-        left: 50%;
-        transform: translateX(-50%);
-        display: inline-block;
-        color: #FFFFFF !important;
-        font-size: 12px;
-        border: #FFFFFF 2px solid;
-        padding: 5px;
-        text-decoration: none !important;
-        cursor: pointer;
-    }
-}
+/* end icon menu */

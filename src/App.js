@@ -9,13 +9,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 import 'bootstrap/dist/css/bootstrap-reboot.css';
 import 'font-awesome/css/font-awesome.min.css';
-import {Switch, Route} from "react-router-dom";
+import {Switch, Route, Redirect} from "react-router-dom";
 import Home from "./page/index/home"
 import AboutMe from "./page/index/aboutme"
 import Resume from "./page/index/resume"
 import Portfolio from "./page/index/portfolio"
 import Education from "./page/index/education"
 import Contact from "./page/index/contact"
+import PageNotFound from "./page/index/pagenotfind"
 import Leftmenu from "./component/core/leftmenu/leftmenu";
 
 function App() {
@@ -34,6 +35,8 @@ function App() {
                     <Route exact path='/portfolio' component={Portfolio}/>
                     <Route exact path='/education' component={Education}/>
                     <Route exact path='/contact' component={Contact}/>
+                    <Route path='/pagenotfound' component={PageNotFound}/>
+                    <Redirect from='*' to='/pagenotfound'/>
                 </Switch>
             </div>
 

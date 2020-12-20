@@ -101,6 +101,10 @@
     background-color: rgb(212, 243, 247);
 }
 
+.active {
+    background-color: rgb(212, 243, 247);
+}
+
 .icon-circle {
     border: 8px solid rgb(17, 214, 240);
     border-radius: 100%;
@@ -109,3 +113,11 @@
 }
 
 /* end icon menu */
+.pagenotfound {
+    background-position: center;
+    background-image: url("data/picture/page404.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    width: 80vw;
+    height: 100vh;
+}

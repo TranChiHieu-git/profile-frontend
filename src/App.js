@@ -29,17 +29,17 @@ function App() {
             </div>
             <div className="right-content">
                 <Switch>
-                    <Route exact path='/' component={Home}/>
+                    <Route exact path='/home' component={Home}/>
                     <Route exact path='/aboutme' component={AboutMe}/>
                     <Route exact path='/resume' component={Resume}/>
                     <Route exact path='/portfolio' component={Portfolio}/>
                     <Route exact path='/education' component={Education}/>
                     <Route exact path='/contact' component={Contact}/>
                     <Route path='/pagenotfound' component={PageNotFound}/>
+                    <Redirect exact from='/' to='/home'/>
                     <Redirect from='*' to='/pagenotfound'/>
                 </Switch>
             </div>
-
         </React.Fragment>
     );
 }

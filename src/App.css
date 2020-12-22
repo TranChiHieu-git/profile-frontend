@@ -11,7 +11,7 @@
     height: 100vh;
     width: 20vw;
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: visible;
     background-color: rgb(247, 249, 252);
 }
 
@@ -98,11 +98,11 @@
 }
 
 .menu-icon:hover {
-    background-color: rgb(212, 243, 247);
+    background-color: rgb(179, 240, 245);
 }
 
 .active {
-    background-color: rgb(212, 243, 247);
+    background-color: rgb(179, 240, 245);
 }
 
 .icon-circle {
@@ -121,3 +121,76 @@
     width: 80vw;
     height: 100vh;
 }
+
+/* page home css */
+.page-home {
+    width: 80vw;
+    height: 100vh;
+}
+
+.hinhnen-1 {
+    background-position: center;
+    background-image: url("data/picture/hinhnen1.jpg");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    width: 80vw;
+    height: 100vh;
+}
+
+.hinhnen-2 {
+    background-position: center;
+    background-image: url("data/picture/hinhnen2.jpg");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    width: 80vw;
+    height: 100vh;
+}
+
+.hinhnen-3 {
+    background-position: center;
+    background-image: url("data/picture/hinhnen3.jpg");
+    background-repeat: no-repeat;
+    background-size: 110%;
+    width: 80vw;
+    height: 100vh;
+}
+
+.page-home-title {
+    z-index: 1;
+    font-weight: bold;
+    font-size: 4em;
+    color: #ffffff;
+    position: absolute;
+    left: 15vw;
+    top: 30vh;
+}
+
+.page-home-button {
+    z-index: 1;
+    position: absolute;
+    left: 24vw;
+    text-align: center;
+    top: 75vh;
+}
+
+.button-page-home {
+    background: linear-gradient(to right, #2980b9, #6dd5fa, #20b2bf);
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 35px;
+    margin: 40px;
+    transition: 0.5s;
+}
+
+.button-page-home:hover {
+    background: linear-gradient(to right, #20b2bf, #6dd5fa, #2980b9);
+    padding: 15px 40px;
+    margin: 40px 35px;
+    color: white;
+    border: none;
+}
+
+/* */

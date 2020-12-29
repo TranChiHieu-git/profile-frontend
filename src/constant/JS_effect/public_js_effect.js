@@ -233,9 +233,9 @@ export const catch_scroll_mouse = () => {
     });
 }
 export const changSelectMenu = (component) => {
-    const arrayMenu = ["home", "aboutme", "resume", "portfolio", "education", "contact"];
+    const arrayMenu = ["aboutme"];
     if (window.location.pathname.split("/")[1].toString() === component) {
-        arrayMenu.map((item) => {
+        arrayMenu.map(item => {
             if (item === component) {
                 document.getElementById(component).classList.add("active");
             } else {

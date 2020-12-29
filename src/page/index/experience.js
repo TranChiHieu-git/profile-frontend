@@ -1,17 +1,18 @@
 import React, {Component} from 'react';
 import {changSelectMenu} from "../../constant/JS_effect/public_js_effect";
 
-class Education extends Component {
+class Experience extends Component {
     componentDidMount() {
-        changSelectMenu("education");
+        changSelectMenu("experience");
     }
+
     render() {
         return (
             <div>
-                f
+                c
             </div>
         );
     }
 }
 
-export default Education;
+export default Experience;

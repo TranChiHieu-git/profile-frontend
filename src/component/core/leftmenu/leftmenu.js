@@ -27,14 +27,14 @@ class Leftmenu extends Component {
                     </div>
                     <Link to="/">
                         <div className="menu-icon" id="aboutme">
-                            <i className="fa fa-drivers-license-o icon-circle"/>&emsp;About me
+                            <i className="fa fa-user-o icon-circle"/>&emsp;Thông tin
                         </div>
                     </Link>
-                    {/*<Link to="/experience">*/}
-                    {/*    <div className="menu-icon" id="experience">*/}
-                    {/*        <i className="fa fa-building-o icon-circle"/>&emsp;Experience*/}
-                    {/*    </div>*/}
-                    {/*</Link>*/}
+                    <Link to="/experience">
+                        <div className="menu-icon" id="experience">
+                            <i className="fa fa-hourglass-o icon-circle"/>&emsp;Kinh nghiệm làm việc
+                        </div>
+                    </Link>
                 </div>
             </div>
         );

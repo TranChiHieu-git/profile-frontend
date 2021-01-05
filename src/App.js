@@ -26,7 +26,7 @@ function App() {
             <div className="right-content">
                 <Switch>
                     <Route exact path='/aboutme' component={AboutMe}/>
-                    {/*<Route exact path='/experience' component={Experience}/>*/}
+                    <Route exact path='/experience' component={Experience}/>
                     <Route path='/pagenotfound' component={PageNotFound}/>
                     <Redirect exact from='/' to='/aboutme'/>
                     <Redirect from='*' to='/pagenotfound'/>

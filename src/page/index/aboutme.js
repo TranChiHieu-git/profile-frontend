@@ -30,18 +30,21 @@ class Aboutme extends Component {
                             <div className="row">
                                 <div className="col-md-12 m-4">
                                     <div className="col-md-12">
-                                        <span className="aboutme-ho">TRAN CHI HIEU</span>
+                                        <span className="aboutme-ho">TRẦN CHÍ HIẾU</span>
                                     </div>
                                     <div className="col-md-12">
                                         <span
-                                            className="aboutme-info">DA NANG - 038.389.6105 - HIEU57130154@GMAIL.COM</span>
+                                            className="aboutme-info">ĐÀ NẴNG - 038.389.6105 - HIEU57130154@GMAIL.COM</span>
                                     </div>
-                                    <div className="col-md-12 mt-5 font">
-                                        I am experienced in leveraging agile frameworks to provide a robust synopsis for
-                                        high level overviews. Iterative approaches to corporate strategy foster
-                                        collaborative thinking to further the overall value proposition.
+                                    <div className="col-md-12 mt-3 font">
+                                        Là một lập trình viên website chuyên về phát triển giao diện người dùng. Có kinh
+                                        nghiệm làm việc với tất cả các giai đoạn của quá trình phát triển cho các dự án
+                                        website. Thông thạo nhiều ngôn ngữ lập trình như JavaScript, TypeScript, Java,..
+                                        và các ngôn ngữ lập trình web như HTML, CSS, SQL,... cũng như kinh nghiệm làm
+                                        việc với các framework web phổ biến hiện nay như Java Spring, Angular 2+,
+                                        ReactJs,...
                                     </div>
-                                    <div className="col-md-12 mt-5">
+                                    <div className="col-md-12 mt-3">
                                         <div className="flex-box">
                                             <a href="skype:de131cbe06513661?add">
                                                 <div className="icon-contact">
@@ -66,7 +69,7 @@ class Aboutme extends Component {
                         </div>
                         <div className="col-md-5">
                             <div className="col-md-12">
-                                <img src={aboutMe} className="img-aboutme"/>
+                                <img src={aboutMe} className="img-aboutme" alt="hinh anh vi du"/>
                             </div>
                         </div>
                     </div>

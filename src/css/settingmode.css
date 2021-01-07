@@ -1,0 +1,121 @@
+html[data-theme="dark"] {
+    --textcolor: rgb(250, 250, 250);
+    --backgroundcolor: rgb(42, 42, 42);
+    --bgcomponent: rgb(0, 0, 0);
+}
+
+html[data-theme="light"] {
+    --textcolor: rgb(5, 5, 5);
+    --backgroundcolor: rgb(224, 224, 224);
+    --bgcomponent: #ffffff;
+}
+
+html[data-color="red"] {
+    --mainColor: red;
+}
+
+.red {
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+html[data-color="yellow"] {
+    --mainColor: yellow;
+}
+
+.yellow {
+    background-color: yellow;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+html[data-color="green"] {
+    --mainColor: green;
+}
+
+.green {
+    background-color: green;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+html[data-color="blue"] {
+    --mainColor: blue;
+}
+
+.blue {
+    background-color: blue;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+html[data-color="purple"] {
+    --mainColor: purple;
+}
+
+.purple {
+    background-color: purple;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+html[data-color="gray"] {
+    --mainColor: gray;
+}
+
+.gray {
+    background-color: gray;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+html[data-color="pink"] {
+    --mainColor: pink;
+}
+
+.pink {
+    background-color: pink;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+html[data-color="orange"] {
+    --mainColor: orange;
+}
+
+.orange {
+    background-color: orange;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+html[data-color="aqua"] {
+    --mainColor: aqua;
+}
+
+.aqua {
+    background-color: aqua;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+html[data-color="lightsalmon"] {
+    --mainColor: lightsalmon;
+}
+
+.lightsalmon {
+    background-color: lightsalmon;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}

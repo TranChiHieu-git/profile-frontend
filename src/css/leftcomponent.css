@@ -1,0 +1,124 @@
+.name-title {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 1vh;
+}
+
+.type-effect-css {
+    position: fixed;
+    opacity: 0.5;
+    top: 12vh;
+    z-index: 1;
+}
+
+.avt-top {
+    /*z-index: 3;*/
+    position: fixed;
+    left: 10vw;
+    width: 291px;
+    height: 50px;
+    border-top: 0 solid transparent;
+    border-bottom: 60px solid transparent;
+    border-left: 291px solid var(--bgcomponent);
+}
+
+.avt-bottom {
+    z-index: 3;
+    position: fixed;
+    left: 10vw;
+    top: 52vh;
+    width: 291px;
+    height: 50px;
+    border-top: 60px solid transparent;
+    border-bottom: 0 solid transparent;
+    border-right: 291px solid var(--bgcomponent);
+}
+
+.avt-left-component {
+    width: 291px;
+    height: auto;
+}
+
+.time-line-left-component {
+    margin-top: 2px;
+}
+
+.text-left-component {
+    z-index: 2;
+    color: var(--textcolor);
+}
+
+
+@media only screen and (max-width: 480px) {
+    .type-effect-css {
+        position: absolute;
+        opacity: 0.5;
+        top: -1vh;
+        z-index: 1;
+    }
+
+    .avt-top {
+        position: absolute;
+        left: 0;
+        top: 10.2vh;
+        width: 300px;
+        height: 50px;
+        border-top: 0 solid transparent;
+        border-bottom: 60px solid transparent;
+        border-left: 300px solid var(--bgcomponent);
+    }
+
+    .avt-bottom {
+        z-index: 3;
+        position: absolute;
+        top: 61.5vh;
+        left: 0;
+        width: 300px;
+        height: 50px;
+        border-top: 60px solid transparent;
+        border-bottom: 0 solid transparent;
+        border-right: 300px solid var(--bgcomponent);
+    }
+
+    .avt-left-component {
+        width: 300px;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .type-effect-css {
+        position: absolute;
+        opacity: 0.5;
+        top: -1vh;
+        z-index: 1;
+    }
+
+    .avt-top {
+        position: absolute;
+        left: 0;
+        top: 10.2vh;
+        width: 300px;
+        height: 50px;
+        border-top: 0 solid transparent;
+        border-bottom: 60px solid transparent;
+        border-left: 300px solid var(--bgcomponent);
+    }
+
+    .avt-bottom {
+        z-index: 3;
+        position: absolute;
+        top: 61.5vh;
+        left: 0;
+        width: 300px;
+        height: 50px;
+        border-top: 60px solid transparent;
+        border-bottom: 0 solid transparent;
+        border-right: 300px solid var(--bgcomponent);
+    }
+
+    .avt-left-component {
+        width: 300px;
+        height: auto;
+    }
+}

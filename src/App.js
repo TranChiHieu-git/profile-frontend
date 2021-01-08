@@ -18,7 +18,7 @@ function App() {
     const [visible, setVisible] = useState(false);
     const defaultColor = "green";
     useEffect(() => {
-        document.getElementById("app-root").style.height = (document.getElementById("left-component-id").clientHeight + 300) + "px";
+        document.getElementById("app-root").style.height = (document.getElementById("left-component-id").clientHeight + 100) + "px";
         if (localStorage.getItem("color") === null) {
             localStorage.setItem("color", defaultColor);
             document.getElementsByTagName("HTML")[0].setAttribute("data-color", defaultColor);
@@ -51,12 +51,12 @@ function App() {
             <div id="left-component-id" className="left-component">
                 <Leftcomponent/>
             </div>
-            <div className="cube"/>
-            <div className="cube"/>
-            <div className="cube"/>
-            <div className="cube"/>
-            <div className="cube"/>
-            <div className="cube"/>
+            {/*<div className="cube"/>*/}
+            {/*<div className="cube"/>*/}
+            {/*<div className="cube"/>*/}
+            {/*<div className="cube"/>*/}
+            {/*<div className="cube"/>*/}
+            {/*<div className="cube"/>*/}
             {/*<div className="right-content">*/}
             {/*    <Switch>*/}
             {/*        <Route exact path='/aboutme' component={AboutMe}/>*/}

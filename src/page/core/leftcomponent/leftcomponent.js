@@ -25,14 +25,20 @@ class Leftcomponent extends Component {
                 </div>
                 <div className="col-md-12 mt-4">
                     <Timeline className="time-line-left-component">
-                        <Timeline.Item className="text-left-component" color={localStorage.getItem("color")}>Birth-day:
-                            28-08-1997</Timeline.Item>
-                        <Timeline.Item className="text-left-component" color={localStorage.getItem("color")}>Address: Da
-                            Nang City</Timeline.Item>
-                        <Timeline.Item className="text-left-component" color={localStorage.getItem("color")}>email:
-                            hieu57130154@gmail.com</Timeline.Item>
+                        <Timeline.Item className="text-left-component" color={localStorage.getItem("color")}>
+                            <label className="label">Birth day:</label> <label className="text"> 28-08-1997</label>
+                        </Timeline.Item>
+                        <Timeline.Item className="text-left-component" color={localStorage.getItem("color")}>
+                            <label className="label">Address:</label> <label className="text"> Da Nang City</label>
+                        </Timeline.Item>
+                        <Timeline.Item className="text-left-component" color={localStorage.getItem("color")}>
+                            <label className="label">Email:</label> <label
+                            className="text"> hieu57130154@gmail.com</label>
+                        </Timeline.Item>
                         <Timeline.Item className="text-left-component"
-                                       color={localStorage.getItem("color")}>Skype: de131cbe06513661</Timeline.Item>
+                                       color={localStorage.getItem("color")}>
+                            <label className="label">Skype:</label> <label className="text"> de131cbe06513661</label>
+                        </Timeline.Item>
                     </Timeline>
                 </div>
             </div>

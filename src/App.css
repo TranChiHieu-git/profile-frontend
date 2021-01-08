@@ -202,6 +202,7 @@
     z-index: 2;
     position: fixed;
     color: var(--backgroundcolor) !important;
+
     background-color: var(--mainColor) !important;
     right: 0;
     top: 50px;
@@ -242,33 +243,86 @@
     color: var(--textcolor);
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 425px) {
+    .app-css {
+        display: flex;
+        justify-content: center;
+    }
+
     .left-component {
+        position: static;
+        align-content: center;
+        margin-top: 30px;
         border-radius: 10px;
-        position: absolute;
         z-index: 1;
-        top: 12vh;
         width: 300px;
-        min-height: 400px;
+        height: 600px;
         background: var(--bgcomponent);
         color: var(--textcolor);
-        overflow-x: hidden !important;
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 426px ) and (max-width: 768px) {
+    .app-css {
+        display: flex;
+        justify-content: center;
+    }
+
     .left-component {
+        position: static;
+        align-content: center;
+        margin-top: 30px;
         border-radius: 10px;
-        position: absolute;
         z-index: 1;
-        top: 12vh;
-        width: 300px;
-        min-height: 400px;
+        width: 600px;
+        height: 940px;
         background: var(--bgcomponent);
         color: var(--textcolor);
-        overflow-x: hidden !important;
     }
 }
+
+@media only screen and (min-width: 769px ) and (max-width: 1440px) {
+    .app-css {
+
+    }
+
+    .left-component {
+        position: fixed;
+        left: 50px;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        border-radius: 10px;
+        z-index: 1;
+        width: 300px;
+        height: 90vh;
+        background: var(--bgcomponent);
+        color: var(--textcolor);
+    }
+}
+
+@media only screen and (min-width: 1441px ) {
+    .app-css {
+
+    }
+
+    .left-component {
+        position: fixed;
+        left: 50px;
+        top: 0;
+        bottom: 0;
+        margin-top: auto;
+        margin-bottom: auto;
+        border-radius: 10px;
+        z-index: 1;
+        width: 300px;
+        height: 90vh;
+        background: var(--bgcomponent);
+        color: var(--textcolor);
+    }
+}
+
 
 
 

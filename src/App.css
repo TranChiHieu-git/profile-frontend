@@ -231,17 +231,17 @@
     }
 }
 
-.left-component {
-    background: var(--bgcomponent);
-    position: fixed;
-    z-index: 1;
-    left: 10vw;
-    top: 4vh;
-    width: 291px;
-    min-height: 500px;
-    border-radius: 9px;
-    color: var(--textcolor);
-}
+/*.left-component {*/
+/*    background: var(--bgcomponent);*/
+/*    position: fixed;*/
+/*    z-index: 1;*/
+/*    left: 10vw;*/
+/*    top: 4vh;*/
+/*    width: 291px;*/
+/*    min-height: 500px;*/
+/*    border-radius: 9px;*/
+/*    color: var(--textcolor);*/
+/*}*/
 
 @media only screen and (max-width: 425px) {
     .app-css {
@@ -284,6 +284,17 @@
 @media only screen and (min-width: 769px ) and (max-width: 1440px) {
     .app-css {
 
+    }
+
+    .rigt-top-component {
+        position: absolute;
+        left: 450px;
+        top: 33px;
+        width: 800px;
+        height: 100px;
+        background: var(--bgcomponent);
+        color: var(--textcolor);
+        border-radius: 10px;
     }
 
     .left-component {

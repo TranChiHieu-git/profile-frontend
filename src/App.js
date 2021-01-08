@@ -13,6 +13,7 @@ import {Switch, Route, Redirect} from "react-router-dom";
 import {Drawer} from 'antd';
 import Setting from "./page/core/setting/setting";
 import Leftcomponent from "./page/core/leftcomponent/leftcomponent";
+import RightTopcomponent from "./page/core/right_topcomponent/right_topcomponent";
 
 function App() {
     const [visible, setVisible] = useState(false);
@@ -50,6 +51,9 @@ function App() {
             </div>
             <div id="left-component-id" className="left-component">
                 <Leftcomponent/>
+            </div>
+            <div id="rigt-top-component-id" className="rigt-top-component">
+                <RightTopcomponent/>
             </div>
             {/*<div className="cube"/>*/}
             {/*<div className="cube"/>*/}

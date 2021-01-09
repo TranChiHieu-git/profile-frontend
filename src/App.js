@@ -19,7 +19,7 @@ function App() {
     const [visible, setVisible] = useState(false);
     const defaultColor = "green";
     useEffect(() => {
-        document.getElementById("app-root").style.height = (document.getElementById("left-component-id").clientHeight + 100) + "px";
+        // document.getElementById("app-root").style.height = (document.getElementById("left-component-id").clientHeight + 100) + "px";
         if (localStorage.getItem("color") === null) {
             localStorage.setItem("color", defaultColor);
             document.getElementsByTagName("HTML")[0].setAttribute("data-color", defaultColor);
@@ -34,7 +34,7 @@ function App() {
         }
     });
     return (
-        <div id="app-root" className="app-css">
+        <div className="app-css">
             <Drawer
                 title="Cài đặt giao diện"
                 placement="right"
@@ -49,27 +49,27 @@ function App() {
             <div className="button-config" onClick={() => setVisible(true)}>
                 <i className="animation-config fa fa-cog"/>
             </div>
-            <div id="left-component-id" className="left-component">
-                <Leftcomponent/>
+            <div className="container-fluid margin-bottom">
+                <div className="row">
+                    <div className="col-sm-0 col-md-0 col-lg-nho-1 col-lg-nho-1"/>
+                    <div className="col-sm-12 col-md-12 col-lg-4 col-xl-3">
+                        <Leftcomponent/>
+                    </div>
+                    <div className="col-sm-12 col-md-12 col-lg-7 col-xl-8">
+                        <RightTopcomponent/>
+                        <Leftcomponent/>
+                        <div className="right-content">
+                            <Switch>
+                                {/*<Route exact path='/aboutme' component={AboutMe}/>*/}
+                                {/*<Route exact path='/experience' component={Experience}/>*/}
+                                {/*<Route path='/pagenotfound' component={PageNotFound}/>*/}
+                                {/*<Redirect exact from='/' to='/aboutme'/>*/}
+                                {/*<Redirect from='*' to='/pagenotfound'/>*/}
+                            </Switch>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="rigt-top-component-id" className="rigt-top-component">
-                <RightTopcomponent/>
-            </div>
-            {/*<div className="cube"/>*/}
-            {/*<div className="cube"/>*/}
-            {/*<div className="cube"/>*/}
-            {/*<div className="cube"/>*/}
-            {/*<div className="cube"/>*/}
-            {/*<div className="cube"/>*/}
-            {/*<div className="right-content">*/}
-            {/*    <Switch>*/}
-            {/*        <Route exact path='/aboutme' component={AboutMe}/>*/}
-            {/*        <Route exact path='/experience' component={Experience}/>*/}
-            {/*        <Route path='/pagenotfound' component={PageNotFound}/>*/}
-            {/*        <Redirect exact from='/' to='/aboutme'/>*/}
-            {/*        <Redirect from='*' to='/pagenotfound'/>*/}
-            {/*    </Switch>*/}
-            {/*</div>*/}
         </div>
     );
 }

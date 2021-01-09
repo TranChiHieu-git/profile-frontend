@@ -1,201 +1,29 @@
-.app-css {
-    background-color: var(--backgroundcolor) !important;
-    z-index: 1;
-    width: 100%;
-}
-
-@keyframes cube {
-    from {
-        transform: scale(0) rotate(0deg) translate(-50%, -50%);
-        opacity: 1;
-    }
-    to {
-        transform: scale(10) rotate(960deg) translate(-50%, -50%);
-        opacity: 0;
-    }
-}
-
-@-webkit-keyframes cube {
-    from {
-        transform: scale(0) rotate(0deg) translate(-50%, -50%);
-        opacity: 1;
-    }
-    to {
-        transform: scale(10) rotate(960deg) translate(-50%, -50%);
-        opacity: 0;
-    }
-}
-
-@media only screen and (max-height: 625px) {
-    .cube {
-        z-index: 0;
-        position: absolute;
-        top: 75%;
-        left: 10%;
-        width: 10px;
-        height: 10px;
-        border: solid 1px var(--mainColor);
-        transform-origin: top left;
-        transform: scale(0) rotate(0deg) translate(-50%, -50%);
-        -webkit-animation: cube 12s ease-in forwards infinite;
-        animation: cube 12s ease-in forwards infinite;
-    }
-
-    .cube:nth-child(2n) {
-        border-color: var(--mainColor);
-    }
-
-    .cube:nth-child(2) {
-        -webkit-animation-delay: 2s;
-        animation-delay: 2s;
-        left: 3vw;
-        top: 3vh;
-    }
-
-    .cube:nth-child(3) {
-        -webkit-animation-delay: 4s;
-        animation-delay: 4s;
-        left: 50vw;
-        top: 15vh;
-    }
-
-    .cube:nth-child(4) {
-        -webkit-animation-delay: 6s;
-        animation-delay: 6s;
-        left: 85vw;
-        top: 10vh;
-    }
-
-    .cube:nth-child(5) {
-        -webkit-animation-delay: 8s;
-        animation-delay: 8s;
-        left: 30vw;
-        top: 50vh;
-    }
-
-    .cube:nth-child(6) {
-        -webkit-animation-delay: 10s;
-        animation-delay: 10s;
-        left: 85vw;
-        top: 50vh;
-    }
-}
-
-@media only screen and  (max-height: 1250px) and (min-height: 625px) {
-    .cube {
-        z-index: 0;
-        position: absolute;
-        top: 115%;
-        left: 10%;
-        width: 10px;
-        height: 10px;
-        border: solid 1px var(--mainColor);
-        transform-origin: top left;
-        transform: scale(0) rotate(0deg) translate(-50%, -50%);
-        -webkit-animation: cube 12s ease-in forwards infinite;
-        animation: cube 12s ease-in forwards infinite;
-    }
-
-    .cube:nth-child(2n) {
-        border-color: var(--mainColor);
-    }
-
-    .cube:nth-child(2) {
-        -webkit-animation-delay: 2s;
-        animation-delay: 2s;
-        left: 10%;
-        top: 20%;
-    }
-
-    .cube:nth-child(3) {
-        -webkit-animation-delay: 4s;
-        animation-delay: 4s;
-        left: 50%;
-        top: 115%;
-    }
-
-    .cube:nth-child(4) {
-        -webkit-animation-delay: 6s;
-        animation-delay: 6s;
-        left: 85%;
-        top: 100%;
-    }
-
-    .cube:nth-child(5) {
-        -webkit-animation-delay: 8s;
-        animation-delay: 8s;
-        left: 30vw;
-        top: 50vh;
-    }
-
-    .cube:nth-child(6) {
-        -webkit-animation-delay: 10s;
-        animation-delay: 10s;
-        left: 85vw;
-        top: 50vh;
-    }
-}
-
-@media only screen and (max-height: 1875px) and  (min-height: 1250px) {
-    .cube {
-        z-index: 0;
-        position: absolute;
-        top: 175vh;
-        left: 10vw;
-        width: 10px;
-        height: 10px;
-        border: solid 1px var(--mainColor);
-        transform-origin: top left;
-        transform: scale(0) rotate(0deg) translate(-50%, -50%);
-        -webkit-animation: cube 12s ease-in forwards infinite;
-        animation: cube 12s ease-in forwards infinite;
-    }
-
-    .cube:nth-child(2n) {
-        border-color: var(--mainColor);
-    }
-
-    .cube:nth-child(2) {
-        -webkit-animation-delay: 2s;
-        animation-delay: 2s;
-        left: 10vw;
-        top: 20vh;
-    }
-
-    .cube:nth-child(3) {
-        -webkit-animation-delay: 4s;
-        animation-delay: 4s;
-        left: 50vw;
-        top: 195vh;
-    }
-
-    .cube:nth-child(4) {
-        -webkit-animation-delay: 6s;
-        animation-delay: 6s;
-        left: 85vw;
-        top: 200vh;
-    }
-
-    .cube:nth-child(5) {
-        -webkit-animation-delay: 8s;
-        animation-delay: 8s;
-        left: 30vw;
-        top: 50vh;
-    }
-
-    .cube:nth-child(6) {
-        -webkit-animation-delay: 10s;
-        animation-delay: 10s;
-        left: 85vw;
-        top: 50vh;
-    }
-}
-
-/* ========================================== css background  =========================================== */
 .flex-box {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+}
+
+.app-css {
+    background: var(--backgroundcolor);
+}
+
+.col-lg-nho-1 {
+    -ms-flex: 0 0 3.333333%;
+    flex: 0 0 3.333333%;
+    max-width: 3.333333%;
+}
+
+.col-xl-to-7 {
+    -ms-flex: 0 0 70.333333%;
+    flex: 0 0 70.333333%;
+    max-width: 70.333333%;
+}
+
+.col-lg-to-7 {
+    -ms-flex: 0 0 35.333333%;
+    flex: 0 0 35.333333%;
+    max-width: 35.333333%;
 }
 
 .button-config {
@@ -231,108 +59,6 @@
     }
 }
 
-/*.left-component {*/
-/*    background: var(--bgcomponent);*/
-/*    position: fixed;*/
-/*    z-index: 1;*/
-/*    left: 10vw;*/
-/*    top: 4vh;*/
-/*    width: 291px;*/
-/*    min-height: 500px;*/
-/*    border-radius: 9px;*/
-/*    color: var(--textcolor);*/
-/*}*/
-
-@media only screen and (max-width: 425px) {
-    .app-css {
-        display: flex;
-        justify-content: center;
-    }
-
-    .left-component {
-        position: static;
-        align-content: center;
-        margin-top: 30px;
-        border-radius: 10px;
-        z-index: 1;
-        width: 300px;
-        height: 600px;
-        background: var(--bgcomponent);
-        color: var(--textcolor);
-    }
-}
-
-@media only screen and (min-width: 426px ) and (max-width: 768px) {
-    .app-css {
-        display: flex;
-        justify-content: center;
-    }
-
-    .left-component {
-        position: static;
-        align-content: center;
-        margin-top: 30px;
-        border-radius: 10px;
-        z-index: 1;
-        width: 600px;
-        height: 940px;
-        background: var(--bgcomponent);
-        color: var(--textcolor);
-    }
-}
-
-@media only screen and (min-width: 769px ) and (max-width: 1440px) {
-    .app-css {
-
-    }
-
-    .rigt-top-component {
-        position: absolute;
-        left: 450px;
-        top: 33px;
-        width: 800px;
-        height: 100px;
-        background: var(--bgcomponent);
-        color: var(--textcolor);
-        border-radius: 10px;
-    }
-
-    .left-component {
-        position: fixed;
-        left: 50px;
-        top: 0;
-        bottom: 0;
-        margin-top: auto;
-        margin-bottom: auto;
-        border-radius: 10px;
-        z-index: 1;
-        width: 300px;
-        height: 90vh;
-        background: var(--bgcomponent);
-        color: var(--textcolor);
-    }
-}
-
-@media only screen and (min-width: 1441px ) {
-    .app-css {
-
-    }
-
-    .left-component {
-        position: fixed;
-        left: 50px;
-        top: 0;
-        bottom: 0;
-        margin-top: auto;
-        margin-bottom: auto;
-        border-radius: 10px;
-        z-index: 1;
-        width: 300px;
-        height: 90vh;
-        background: var(--bgcomponent);
-        color: var(--textcolor);
-    }
-}
 
 
 

@@ -12,6 +12,7 @@ html[data-theme="light"] {
 
 html[data-color="red"] {
     --mainColor: red;
+    --mainColorHover: #ff5353;
 }
 
 .red {
@@ -23,6 +24,7 @@ html[data-color="red"] {
 
 html[data-color="yellow"] {
     --mainColor: yellow;
+    --mainColorHover: #ffff79;
 }
 
 .yellow {
@@ -34,6 +36,7 @@ html[data-color="yellow"] {
 
 html[data-color="green"] {
     --mainColor: green;
+    --mainColorHover: #39ff39;
 }
 
 .green {
@@ -45,6 +48,7 @@ html[data-color="green"] {
 
 html[data-color="blue"] {
     --mainColor: blue;
+    --mainColorHover: #4040ff;
 }
 
 .blue {
@@ -56,6 +60,7 @@ html[data-color="blue"] {
 
 html[data-color="purple"] {
     --mainColor: purple;
+    --mainColorHover: #f837f8;
 }
 
 .purple {
@@ -67,6 +72,7 @@ html[data-color="purple"] {
 
 html[data-color="gray"] {
     --mainColor: gray;
+    --mainColorHover: #343434;
 }
 
 .gray {
@@ -78,6 +84,7 @@ html[data-color="gray"] {
 
 html[data-color="pink"] {
     --mainColor: pink;
+    --mainColorHover: #ff7c96;
 }
 
 .pink {
@@ -89,6 +96,7 @@ html[data-color="pink"] {
 
 html[data-color="orange"] {
     --mainColor: orange;
+    --mainColorHover: #f8a933;
 }
 
 .orange {
@@ -100,6 +108,7 @@ html[data-color="orange"] {
 
 html[data-color="aqua"] {
     --mainColor: aqua;
+    --mainColorHover: #7efafa;
 }
 
 .aqua {
@@ -111,6 +120,7 @@ html[data-color="aqua"] {
 
 html[data-color="lightsalmon"] {
     --mainColor: lightsalmon;
+    --mainColorHover: #fd7844;
 }
 
 .lightsalmon {

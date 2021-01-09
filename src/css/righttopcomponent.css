@@ -1,37 +1,71 @@
-.display-righttop {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    justify-content: flex-start;
+.right-container {
+    margin-top: 5vh;
 }
 
-.righttopelement {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    height: 100%;
-    font-size: 4rem;
-    padding-left: 20px;
-    padding-right: 20px;
-    background: var(--mainColor) !important;
-    cursor: pointer;
+/* =============================================css responsive navbar========================================= */
+.topnav {
+    overflow: hidden !important;
+    border-radius: 10px !important;
+    height: 68px !important;
+    font-weight: bold !important;
+    background-color: var(--bgcomponent) !important;
 }
 
-.righttopelementtypetext {
-    vertical-align: 10px;
-    padding: 35px 30px 35px 30px;
-    font-size: 1.3rem;
-    font-weight: bold;
-    cursor: pointer;
+.topnav-home {
+    float: left;
+    display: block;
+    color: var(--textcolor);
+    text-align: center;
+    padding: 14px 30px;
+    text-decoration: none;
+    font-size: 26px;
+    background-color: var(--mainColor);
 }
 
-.righttopelementtypetext:hover {
-    vertical-align: 10px;
-    padding: 35px 30px 35px 30px;
-    font-size: 1.3rem;
-    font-weight: bold;
+.topnav-home:hover {
+    transition: 0.5s;
+    color: var(--textcolor);
+    background-color: var(--mainColorHover);
+}
+
+.topnav-item {
+    float: left;
+    display: block;
+    color: var(--textcolor);
+    text-align: center;
+    padding: 22px 20px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.topnav-item:hover {
     color: var(--mainColor);
 }
 
-.item-right-top {
-    color: var(--bgcomponent);
+.icon {
+    float: left;
+    color: var(--textcolor);
+    text-align: center;
+    padding: 22px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    display: none;
 }
+.an{
+    display: none;
+}
+@media screen and (max-width: 600px) {
+    .topnav-item {
+        display: none;
+    }
+
+    .icon {
+        float: right;
+        display: block;
+    }
+    .responsive-custom{
+        display: block;
+    }
+}
+
+/* ==================================== end css responsive navbar =============================================*/

@@ -4,9 +4,9 @@
 
 /* =============================================css responsive navbar========================================= */
 .topnav {
-    overflow: hidden !important;
+    /*overflow: hidden !important;*/
     border-radius: 10px !important;
-    height: 68px !important;
+    height: 68px;
     font-weight: bold !important;
     background-color: var(--bgcomponent) !important;
 }
@@ -20,6 +20,8 @@
     text-decoration: none;
     font-size: 26px;
     background-color: var(--mainColor);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
 .topnav-home:hover {
@@ -43,6 +45,7 @@
 }
 
 .icon {
+    position: static;
     float: left;
     color: var(--textcolor);
     text-align: center;
@@ -51,20 +54,47 @@
     font-size: 18px;
     display: none;
 }
-.an{
-    display: none;
-}
+
 @media screen and (max-width: 600px) {
     .topnav-item {
+        border-radius: 10px !important;
         display: none;
+    }
+
+    .myTopnav.icon {
+        float: none;
+        left: 0;
+        top: 0;
     }
 
     .icon {
         float: right;
         display: block;
     }
-    .responsive-custom{
+
+    .responsive-custom.icon {
+        position: absolute;
+        right: 15px;
+        top: 26px;
+    }
+
+    .topnav-home {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .responsive-custom.topnav-home {
+        float: none !important;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .responsive-custom {
         display: block;
+        float: none;
+        text-align: left;
+        height: auto !important;
     }
 }
 

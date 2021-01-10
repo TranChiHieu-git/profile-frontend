@@ -30,10 +30,12 @@ class Leftcomponent extends Component {
                         <div className="col-sm-12 col-md-8 col-lg-12 col-xl-12 mt-5">
                             <Timeline className="time-line-left-component">
                                 <Timeline.Item className="text-left-component" color={localStorage.getItem("color")}>
-                                    <label className="label">Birth day:</label> <label className="text"> 28-08-1997</label>
+                                    <label className="label">Ngày sinh:</label> <label
+                                    className="text"> 28-08-1997</label>
                                 </Timeline.Item>
                                 <Timeline.Item className="text-left-component" color={localStorage.getItem("color")}>
-                                    <label className="label">Address:</label> <label className="text"> Da Nang City</label>
+                                    <label className="label">Địa chỉ:</label> <label className="text"> Thành phố Đà
+                                    Nẵng</label>
                                 </Timeline.Item>
                                 <Timeline.Item className="text-left-component" color={localStorage.getItem("color")}>
                                     <label className="label">Email:</label> <label

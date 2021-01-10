@@ -1,0 +1,74 @@
+.home-root {
+    padding-bottom: 5vh;
+    margin-top: 5vh;
+    background-color: var(--bgcomponent);
+    border-radius: 10px;
+    color: var(--textcolor);
+    margin-bottom: 5vh;
+}
+
+.title-css {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-top: 5vh;
+    background: linear-gradient(0deg, var(--mainColor) 0%, var(--bgcomponent) 25%);
+    margin-bottom: 30px;
+}
+
+.xuonghang {
+    margin-bottom: 10px;
+}
+
+.divider-text {
+    font-weight: bold !important;
+    font-size: 1.2rem !important;
+    color: var(--textcolor) !important;
+}
+
+.ant-divider-horizontal.ant-divider-with-text-center::before,
+.ant-divider-horizontal.ant-divider-with-text-center::after {
+    border-top: 2px solid var(--textcolor) !important;
+}
+
+.skill-item-css {
+    border-radius: 15px;
+    background-color: var(--backgroundcolor);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+    padding: 40px;
+    transition: 1s;
+}
+
+.skill-item-img {
+    transition: 1s;
+    width: 70px;
+    height: auto;
+}
+
+.skill-item-css:hover {
+    transition: 1s;
+    background: linear-gradient(-45deg, var(--backgroundcolor), var(--backgroundcolor), var(--mainColor));
+    background-size: 400% 400%;
+    animation: gradient 4s ease infinite;
+    padding: 25px;
+}
+
+.skill-item-css:hover .skill-item-img {
+    transition: 1s;
+    width: 100px;
+    height: auto;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+}

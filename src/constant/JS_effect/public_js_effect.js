@@ -233,7 +233,7 @@ export const catch_scroll_mouse = () => {
     });
 }
 export const changSelectMenu = (component) => {
-    const arrayMenu = ["aboutme","experience"];
+    const arrayMenu = ["aboutme", "experience"];
     if (window.location.pathname.split("/")[1].toString() === component) {
         arrayMenu.map(item => {
             if (item === component) {

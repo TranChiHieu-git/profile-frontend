@@ -14,6 +14,8 @@ import {Drawer} from 'antd';
 import Setting from "./page/core/setting/setting";
 import Leftcomponent from "./page/core/leftcomponent/leftcomponent";
 import RightTopcomponent from "./page/core/right_topcomponent/right_topcomponent";
+import Home from "./page/core/rightcomponent/right-homecomponent";
+import Experience from "./page/core/experience/experience";
 
 function App() {
     const [visible, setVisible] = useState(false);
@@ -49,7 +51,7 @@ function App() {
             <div className="button-config" onClick={() => setVisible(true)}>
                 <i className="animation-config fa fa-cog"/>
             </div>
-            <div className="container-fluid margin-bottom">
+            <div className="container-fluid css-amimation-fade">
                 <div className="row">
                     <div className="col-sm-0 col-md-0 col-lg-nho-1 col-lg-nho-1"/>
                     <div className="col-sm-12 col-md-12 col-lg-4 col-xl-3">
@@ -57,14 +59,11 @@ function App() {
                     </div>
                     <div className="col-sm-12 col-md-12 col-lg-7 col-xl-8">
                         <RightTopcomponent/>
-                        <Leftcomponent/>
                         <div className="right-content">
                             <Switch>
-                                {/*<Route exact path='/aboutme' component={AboutMe}/>*/}
-                                {/*<Route exact path='/experience' component={Experience}/>*/}
-                                {/*<Route path='/pagenotfound' component={PageNotFound}/>*/}
-                                {/*<Redirect exact from='/' to='/aboutme'/>*/}
-                                {/*<Redirect from='*' to='/pagenotfound'/>*/}
+                                <Route exact path='/' component={Home}/>
+                                <Route exact path='/experience' component={Experience}/>
+                                <Redirect from='*' to='/'/>
                             </Switch>
                         </div>
                     </div>

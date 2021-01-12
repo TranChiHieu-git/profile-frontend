@@ -5,8 +5,16 @@
     border-radius: 10px;
     color: var(--textcolor);
     margin-bottom: 5vh;
+    animation: fade 2s;
 }
-
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 .title-css {
     font-weight: bold;
     font-size: 1.5rem;

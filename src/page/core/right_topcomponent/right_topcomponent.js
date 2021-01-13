@@ -32,8 +32,8 @@ class RightTopcomponent extends Component {
                         <i className="fa fa-bars"/>
                     </a>
                     <Link to="/experience" id="nav-id-1" className="topnav-item">KINH NGHIỆM</Link>
-                    <Link to="/" id="nav-id-2" className="topnav-item">DỰ ÁN</Link>
-                    <Link to="/" id="nav-id-3" className="topnav-item">LIÊN HỆ</Link>
+                    <Link to="/project" id="nav-id-2" className="topnav-item">DỰ ÁN</Link>
+                    <Link to="/contact" id="nav-id-3" className="topnav-item">LIÊN HỆ</Link>
                 </div>
             </div>
         );

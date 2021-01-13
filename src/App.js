@@ -16,12 +16,13 @@ import Leftcomponent from "./page/core/leftcomponent/leftcomponent";
 import RightTopcomponent from "./page/core/right_topcomponent/right_topcomponent";
 import Home from "./page/core/rightcomponent/right-homecomponent";
 import Experience from "./page/core/experience/experience";
+import Project from "./page/core/project/project";
+import Contact from "./page/core/contact/contact";
 
 function App() {
     const [visible, setVisible] = useState(false);
     const defaultColor = "green";
     useEffect(() => {
-        // document.getElementById("app-root").style.height = (document.getElementById("left-component-id").clientHeight + 100) + "px";
         if (localStorage.getItem("color") === null) {
             localStorage.setItem("color", defaultColor);
             document.getElementsByTagName("HTML")[0].setAttribute("data-color", defaultColor);
@@ -63,6 +64,8 @@ function App() {
                             <Switch>
                                 <Route exact path='/' component={Home}/>
                                 <Route exact path='/experience' component={Experience}/>
+                                <Route exact path='/project' component={Project}/>
+                                <Route exact path='/contact' component={Contact}/>
                                 <Redirect from='*' to='/'/>
                             </Switch>
                         </div>

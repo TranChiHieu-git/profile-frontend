@@ -1,0 +1,44 @@
+.project-root {
+    padding-bottom: 5vh;
+    margin-top: 5vh;
+    background-color: var(--bgcomponent);
+    border-radius: 10px;
+    color: var(--textcolor);
+    margin-bottom: 5vh;
+    animation: fade 2s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.xuonghang {
+    margin-bottom: 10px;
+}
+
+.ant-card-body {
+    background-color: var(--bgcomponent);
+
+}
+
+.ant-card {
+    background: none;
+}
+
+.ant-card-meta-title {
+    color: var(--textcolor) !important;
+}
+
+.ant-card-meta-description {
+    color: var(--textcolor) !important;
+    opacity: 0.7;
+}
+
+.ant-card-bordered {
+    border: 2px solid var(--backgroundcolor) !important;
+}

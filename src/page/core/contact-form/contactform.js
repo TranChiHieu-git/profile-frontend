@@ -26,6 +26,7 @@ class Contactform extends Component {
                             name="ten"
                             label="Họ và tên"
                             component={renderField}
+                            required={true}
                         />
                     </div>
                     <div className="col-sm-12 col-md-12 col-lg-6 col-xl-6">
@@ -33,7 +34,7 @@ class Contactform extends Component {
                             name="email"
                             label="Email"
                             component={renderField}
-                            multiline={true}
+                            required={true}
                         />
                     </div>
                 </div>
@@ -50,7 +51,7 @@ class Contactform extends Component {
                 </div>
                 <div className="pull-right">
                     <button type="submit" className="btn btn-outline-dark">
-                        <i className="fa fa-send-o"/> Gửi
+                        <i className="fa fa-send-o"/> Hoàn tất
                     </button>
                 </div>
             </form>

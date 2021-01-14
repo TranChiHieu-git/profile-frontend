@@ -9,7 +9,7 @@ import react_logo from "../../../data/picture/react-logo.png";
 import angular_logo from "../../../data/picture/angular-logo.png";
 import mysql_logo from "../../../data/picture/mysql-logo.png";
 import postgresql_logo from "../../../data/picture/postgresql-logo.png";
-import {Divider} from "antd";
+import {Divider, Tooltip} from "antd";
 
 class RightHomecomponent extends Component {
     render() {
@@ -49,55 +49,82 @@ class RightHomecomponent extends Component {
                             <Divider className="divider-text">Ngôn ngữ lập trình/web</Divider>
                         </div>
                         <div className="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-                            <div className="skill-item-css">
-                                <img className="skill-item-img" src={java_logo}/>
-                            </div>
+                            <Tooltip placement="topRight" title="Java: 6 tháng kinh nghiệm"
+                                     color={localStorage.getItem("color")}>
+                                <div className="skill-item-css">
+                                    <img className="skill-item-img" src={java_logo}/>
+                                </div>
+                            </Tooltip>
                         </div>
                         <div className="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-                            <div className="skill-item-css">
-                                <img className="skill-item-img" src={js_logo}/>
-                            </div>
+                            <Tooltip placement="topRight" title="JavaScript: 1 năm kinh nghiệm"
+                                     color={localStorage.getItem("color")}>
+                                <div className="skill-item-css">
+                                    <img className="skill-item-img" src={js_logo}/>
+                                </div>
+                            </Tooltip>
                         </div>
                         <div className="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-                            <div className="skill-item-css">
-                                <img className="skill-item-img" src={html_logo}/>
-                            </div>
+                            <Tooltip placement="topRight" title="HTML: 1 năm kinh nghiệm"
+                                     color={localStorage.getItem("color")}>
+                                <div className="skill-item-css">
+                                    <img className="skill-item-img" src={html_logo}/>
+                                </div>
+                            </Tooltip>
                         </div>
                         <div className="col-sm-12 col-md-6 col-lg-6 col-xl-3">
-                            <div className="skill-item-css">
-                                <img className="skill-item-img" src={css_logo}/>
-                            </div>
+                            <Tooltip placement="topRight" title="CSS: 1 năm kinh nghiệm"
+                                     color={localStorage.getItem("color")}>
+                                <div className="skill-item-css">
+                                    <img className="skill-item-img" src={css_logo}/>
+                                </div>
+                            </Tooltip>
                         </div>
                         <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12 xuonghang">
                             <Divider className="divider-text">FrameWork</Divider>
                         </div>
                         <div className="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                            <div className="skill-item-css">
-                                <img className="skill-item-img" src={spring_logo}/>
-                            </div>
+                            <Tooltip placement="topRight" title="Spring boot: 4 tháng kinh nghiệm"
+                                     color={localStorage.getItem("color")}>
+                                <div className="skill-item-css">
+                                    <img className="skill-item-img" src={spring_logo}/>
+                                </div>
+                            </Tooltip>
                         </div>
                         <div className="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                            <div className="skill-item-css">
-                                <img className="skill-item-img" src={react_logo}/>
-                            </div>
+                            <Tooltip placement="topRight" title="ReactJS: 3 tháng kinh nghiệm"
+                                     color={localStorage.getItem("color")}>
+                                <div className="skill-item-css">
+                                    <img className="skill-item-img" src={react_logo}/>
+                                </div>
+                            </Tooltip>
                         </div>
                         <div className="col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                            <div className="skill-item-css">
-                                <img className="skill-item-img" src={angular_logo}/>
-                            </div>
+                            <Tooltip placement="topRight" title="Angular 2+: 3 tháng kinh nghiệm"
+                                     color={localStorage.getItem("color")}>
+                                <div className="skill-item-css">
+                                    <img className="skill-item-img" src={angular_logo}/>
+                                </div>
+                            </Tooltip>
                         </div>
                         <div className="col-sm-12 col-md-12 col-lg-12 col-xl-12 xuonghang">
                             <Divider className="divider-text">Database</Divider>
                         </div>
                         <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                            <div className="skill-item-css">
-                                <img className="skill-item-img" src={mysql_logo}/>
-                            </div>
+                            <Tooltip placement="topRight" title="MySQL: 5 tháng kinh nghiệm"
+                                     color={localStorage.getItem("color")}>
+                                <div className="skill-item-css">
+                                    <img className="skill-item-img" src={mysql_logo}/>
+                                </div>
+                            </Tooltip>
                         </div>
                         <div className="col-sm-12 col-md-6 col-lg-6 col-xl-6">
-                            <div className="skill-item-css">
-                                <img className="skill-item-img" src={postgresql_logo}/>
-                            </div>
+                            <Tooltip placement="topRight" title="PostgreSQL: 2 tháng kinh nghiệm"
+                                     color={localStorage.getItem("color")}>
+                                <div className="skill-item-css">
+                                    <img className="skill-item-img" src={postgresql_logo}/>
+                                </div>
+                            </Tooltip>
                         </div>
                     </div>
                 </div>

@@ -179,7 +179,7 @@ export const type_write = (id, txtArray, speed = 100, delay_Show_value = 4000, d
     let i = 0;
     let vector = "right";
     let index = 0;
-    setInterval(() => {
+    let time = setInterval(() => {
         if (i < txtArray[index].length && document.getElementById(id) !== null && vector === "right") {
             if (txtArray[index].charAt(i) === " ") {
                 document.getElementById(id).innerHTML += " " + txtArray[index].charAt(i + 1);
@@ -220,6 +220,9 @@ export const type_write = (id, txtArray, speed = 100, delay_Show_value = 4000, d
             if (vector === "right") {
                 clearTimeout(delayWhenWrite);
             }
+        }
+        if (window.location.pathname.split("/")[1] !== "resume") {
+            clearInterval(time);
         }
     }, speed);
 }

@@ -16,3 +16,26 @@
         opacity: 1;
     }
 }
+.MuiInputBase-root{
+    color: var(--textcolor) !important;
+}
+.MuiInput-underline:before{
+    border-bottom: 1px solid var(--textcolor)!important;
+}
+.MuiInput-underline:after{
+    border-bottom: 3px solid var(--mainColor)!important;
+}
+.MuiFormLabel-root{
+    color: var(--textcolor) !important;
+}
+.btn-outline-dark{
+    font-weight: bolder;
+    color: var(--mainColor);
+    border-color: var(--mainColor);
+}
+.btn-outline-dark:hover{
+    background-color: var(--mainColor);
+    font-weight: bolder;
+    color: var(--textcolor);
+    border-color: var(--mainColor);
+}

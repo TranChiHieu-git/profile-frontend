@@ -7,7 +7,7 @@ class RightTopcomponent extends Component {
         return (
             <div className="right-container">
                 <div className="topnav" id="myTopnav">
-                    <Link to="/" id="nav-id-0" className="topnav-home">
+                    <Link to="/resume/home" id="nav-id-0" className="topnav-home">
                         <i className="fa fa-home"/>
                     </Link>
                     <a id="icon-navbar" className="icon btn" onClick={() => {
@@ -31,9 +31,9 @@ class RightTopcomponent extends Component {
                     }}>
                         <i className="fa fa-bars"/>
                     </a>
-                    <Link to="/experience" id="nav-id-1" className="topnav-item">KINH NGHIỆM</Link>
-                    <Link to="/project" id="nav-id-2" className="topnav-item">DỰ ÁN</Link>
-                    <Link to="/contact" id="nav-id-3" className="topnav-item">LIÊN HỆ</Link>
+                    <Link to="/resume/experience" id="nav-id-1" className="topnav-item">KINH NGHIỆM</Link>
+                    <Link to="/resume/project" id="nav-id-2" className="topnav-item">DỰ ÁN</Link>
+                    <Link to="/resume/contact" id="nav-id-3" className="topnav-item">LIÊN HỆ</Link>
                 </div>
             </div>
         );

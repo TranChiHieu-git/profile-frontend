@@ -42,3 +42,6 @@
 .ant-card-bordered {
     border: 2px solid var(--backgroundcolor) !important;
 }
+.ant-card-bordered:hover {
+    border: 2px solid var(--mainColor) !important;
+}

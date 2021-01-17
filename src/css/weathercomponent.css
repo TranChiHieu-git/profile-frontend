@@ -1,0 +1,65 @@
+.weather-root {
+    height: 100vh;
+    width: 100%;
+    background-color: hsla(200, 100%, 50%, 0.4);
+    background-image: url('../data/picture/weather/may1.png'),
+    url('../data/picture/weather/sun.png'),
+    url('../data/picture/weather/baico.png'),
+    url('../data/picture/weather/nuisau.png');
+    background-repeat: repeat-x, no-repeat, no-repeat, no-repeat;
+    background-position: 0 -20%, 90% 10%, 0 110%, 0 40%;
+    background-size: 100% 50%, 7% 10%, 100% 70%, 100% 80%;
+    animation: 50s para infinite linear;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+@keyframes para {
+    100% {
+        background-position: -2000px -10%, 90% 10%, 100% 110%, 0 40%;
+    }
+}
+
+.input-search {
+    width: 100%;
+    height: 50px !important;
+}
+
+.input-search-icon {
+    font-size: 1.5rem;
+    color: #ccc;
+    position: relative;
+    top: 39px;
+    left: 15px;
+    z-index: 1;
+}
+
+.ant-select-selector {
+    font-size: 1.3rem;
+    padding-left: 50px !important;
+    border-radius: 30px !important;
+    height: 50px !important;
+}
+
+.ant-select-selection-search {
+    height: 50px !important;
+}
+
+.ant-select-selection-search-input {
+    padding-left: 40px !important;
+    height: 50px !important;
+}
+
+.ant-select-selection-placeholder {
+    padding-top: 10px !important;
+    height: 50px !important;
+}
+
+.app-name {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 3rem;
+    color: #f7ff00;
+    text-shadow: 3px 2px 1px #d70000;
+}

@@ -1,6 +1,8 @@
 import {combineReducers} from "redux";
-import {thanhpho} from './thanhpho/index'
+import {thanhpho} from './thanhpho/index';
+import {thoitiet} from './thoitiet/index';
 
-export const thoitiet = combineReducers({
+export const THOITIET = combineReducers({
     city: thanhpho,
+    weather: thoitiet,
 });

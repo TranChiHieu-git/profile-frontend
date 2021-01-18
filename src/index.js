@@ -3,14 +3,16 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import './css/settingmode.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
 import {Provider} from 'react-redux';
-import {createStore} from "redux";
+import {applyMiddleware, createStore} from "redux";
 import {rootReducer} from './reducer/index'
 import {BrowserRouter} from "react-router-dom";
 import 'antd/dist/antd.css';
+import thunk from "redux-thunk";
+import {composeWithDevTools} from "redux-devtools-extension";
+const composeEnhancers = composeWithDevTools({});
 
-const store = createStore(rootReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
+const store = createStore(rootReducer, composeEnhancers(applyMiddleware(thunk)));
 ReactDOM.render(
     <Provider store={store}>
         <BrowserRouter>
@@ -19,4 +21,3 @@ ReactDOM.render(
     </Provider>,
     document.getElementById('root')
 );
-reportWebVitals();

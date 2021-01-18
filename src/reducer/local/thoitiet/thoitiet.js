@@ -1,9 +1,9 @@
 import * as typeAct from "../../../constant/type/type";
 
-export const danhsach_thanhpho = (state = [], action) => {
+export const thoitiet_info = (state = [], action) => {
     const {type, values} = action;
     switch (type) {
-        case typeAct.THANHPHO_DANHSACH:
+        case typeAct.THOITIET_DANHSACH:
             return values ? [...values] : [...state];
         default:
             return [];

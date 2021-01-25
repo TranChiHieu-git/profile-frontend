@@ -6,6 +6,6 @@ export const danhsach_thanhpho = (state = [], action) => {
         case typeAct.THANHPHO_DANHSACH:
             return values ? [...values] : [...state];
         default:
-            return [];
+            return [...state];
     }
 }

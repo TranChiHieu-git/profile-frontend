@@ -6,6 +6,6 @@ export const thoitiet_info = (state = [], action) => {
         case typeAct.THOITIET_DANHSACH:
             return values ? [...values] : [...state];
         default:
-            return [];
+            return [...state];
     }
 }

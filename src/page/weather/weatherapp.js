@@ -101,7 +101,6 @@ class Weatherapp extends Component {
                             <DefaultInfo/>
                         </div>
                     }
-
                 </div>
             </div>
         );

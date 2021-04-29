@@ -61,6 +61,5 @@ class Contactform extends Component {
 
 Contactform = reduxForm({
     form: 'contact',
-
 })(Contactform)
 export default Contactform;
